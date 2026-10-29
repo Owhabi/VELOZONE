@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service & Support - VELOZONE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .mega-menu {
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+        }
+
+        .nav-item:hover .mega-menu {
+            pointer-events: auto;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .page-header h2 {
+            font-size: 32px;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .page-header p {
+            color: #a1a1aa;
+            font-size: 15px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .service-card {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 28px;
+            text-align: left;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .service-card:hover {
+            border-color: #52525b;
+            transform: translateY(-4px);
+        }
+
+        .service-icon {
+            font-size: 28px;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .service-card h3 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #a1a1aa;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .booking-section {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 35px;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .booking-section h3 {
+            color: #ffffff;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .booking-section p {
+            color: #a1a1aa;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            color: #a1a1aa;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input, 
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #27272a;
+            border-radius: 6px;
+            font-size: 14px;
+            background: #09090b;
+            color: #ffffff;
+            font-family: inherit;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ffffff;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background 0.2s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #d4d4d8;
+        }
+
+        @media (max-width: 850px) {
+            .service-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">VELOZONE</a>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="products.html" class="nav-link">Bikes ▾</a>
+                <div class="mega-menu">
+                    <div class="mega-col">
+                        <h4>Road Categories</h4>
+                        <a href="products.html">All Bikes</a>
+                        <a href="products.html">Pure Aero</a>
+                        <a href="products.html">Aero Race</a>
+                        <a href="products.html">Lightweight Aero</a>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Brands</h4>
+                        <a href="products.html">Cervélo</a>
+                        <a href="products.html">Pinarello</a>
+                        <a href="products.html">Specialized</a>
+                        <a href="products.html">Colnago</a>
+                        <a href="products.html">Bianchi</a>
+                        <a href="products.html">BMC</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="gear.html" class="nav-link">Gear & Parts ▾</a>
+                <div class="mega-menu">
+                    <div class="mega-col">
+                        <h4>Apparel & Tech</h4>
+                        <a href="gear.html">Shoes & Helmets</a>
+                        <a href="gear.html">GPS Computers</a>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Components</h4>
+                        <a href="gear.html">Wheelsets & Cockpits</a>
+                        <a href="gear.html">Bottle Cages & Accessories</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="service.html" class="nav-link active">Service & Support</a>
+            </li>
+            <li class="nav-item">
+                <a href="dealers.html" class="nav-link">Find a Dealer</a>
+            </li>
+            <li class="nav-item">
+                <a href="kontak.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="sumber.html" class="nav-link">Sumber</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="page-container">
+        <div class="page-header">
+            <h2>Professional Bike Services</h2>
+            <p>Perawatan standar WorldTour dan dukungan garansi resmi VELOZONE</p>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <span class="service-icon">🔧</span>
+                <h3>Full Precision Overhaul</h3>
+                <p>Pembersihan total ultrasonic, pelumasan ulang bearing, inspeksi retak mikro carbon frame, dan penyetelan presisi drivetrain.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">📏</span>
+                <h3>Dynamic Bike Fitting</h3>
+                <p>Penyesuaian posisi berkendara secara ilmiah menggunakan analisis sudut untuk kenyamanan maksimal dan transfer daya yang efisien.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🛡️</span>
+                <h3>Frame Warranty & Crash Replacement</h3>
+                <p>Layanan klaim garansi resmi pabrikan serta program penggantian frame akibat insiden kecelakaan untuk pemilik terdaftar.</p>
+            </div>
+        </div>
+
+        <div class="booking-section">
+            <h3>Reservasi Jadwal Servis</h3>
+            <p>Isi formulir di bawah ini untuk memesan sesi perawatan di workshop resmi kami</p>
+            
+            <form onsubmit="bookingServis(event)">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" required placeholder="Masukkan nama lengkap">
+                </div>
+
+                <div class="form-group">
+                    <label>WhatsApp / No. HP</label>
+                    <input type="tel" required placeholder="08xxxxxxxxxx">
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Layanan</label>
+                    <select required>
+                        <option value="">-- Pilih Jenis Layanan --</option>
+                        <option value="overhaul">Full Precision Overhaul</option>
+                        <option value="fitting">Dynamic Bike Fitting</option>
+                        <option value="tuning">Drivetrain Tuning & Brakes</option>
+                        <option value="garansi">Klaim Garansi / Frame Inspection</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Tipe Sepeda / Brand</label>
+                    <input type="text" required placeholder="Contoh: Cervélo S5">
+                </div>
+
+                <div class="form-group">
+                    <label>Tanggal Kedatangan</label>
+                    <input type="date" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Konfirmasi Jadwal</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 VELOZONE. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function bookingServis(e) {
+            e.preventDefault();
+            alert('Reservasi servis berhasil dikirim! Tim mekanik VELOZONE akan menghubungi WhatsApp Anda untuk konfirmasi jadwal.');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
