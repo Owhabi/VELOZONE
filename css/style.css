@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0b0b0b;
+    color: #f4f4f5;
+    line-height: 1.6;
+}
+
+/* NAVBAR UTAMA */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+    background: #0b0b0b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #27272a;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #a1a1aa;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.nav-item:hover .nav-link,
+.nav-link.active {
+    color: #ffffff;
+}
+
+/* MEGA MENU CONTAINER - DIPERBAIKI AGAR STABIL DI SEMUA HALAMAN */
+.mega-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    background: #ffffff;
+    color: #121212;
+    padding: 40px 60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-bottom: 1px solid #e4e4e7;
+    z-index: 999;
+}
+
+.nav-item:hover .mega-menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+/* KOLOM KATEGORI MEGA MENU */
+.mega-col {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+.mega-col h4 {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #121212;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #121212;
+    padding-bottom: 5px;
+}
+
+.mega-col a {
+    color: #52525b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mega-col a span {
+    display: block;
+    font-size: 11px;
+    color: #71717a;
+    font-weight: normal;
+}
+
+.mega-col a:hover {
+    color: #000000;
+    transform: translateX(3px);
+}
+
+/* CONTAINER UMUM */
+.page-container {
+    padding-top: 110px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 85vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #27272a;
+    color: #71717a;
+    font-size: 13px;
+}
