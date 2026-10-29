@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Innovation - VELOZONE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f5; /* Abu-abu terang netral */
+            color: #27272a; /* Hitam charcoal lembut */
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* HERO SECTION */
+        .hero-about {
+            height: 40vh;
+            min-height: 250px;
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/header.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff;
+            border-bottom: 1px solid #27272a;
+        }
+
+        .hero-about h1 {
+            font-size: 38px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-about p {
+            color: #e4e4e7; /* Abu-abu terang untuk teks di atas hero */
+            font-size: 16px;
+            margin-top: 8px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* MAIN CONTAINER (SEPERTI STYLE.CSS UTAMA) */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+            background-color: #ffffff;
+            padding: 35px 30px;
+            border-radius: 12px;
+            border: 1px solid #e4e4e7;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .container h2 {
+            font-size: 26px;
+            text-align: center;
+            color: #121212;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: #71717a; /* Abu-abu sedang */
+            max-width: 650px;
+            margin: 0 auto 35px;
+            font-size: 15px;
+        }
+
+        /* GRID KARTU INOVASI */
+        .grid-tech {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .tech-card {
+            background: #fafafa; /* Abu-abu sangat lembut */
+            border: 1px solid #e4e4e7;
+            padding: 24px;
+            border-radius: 8px;
+            transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .tech-card:hover {
+            border-color: #27272a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .tech-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #121212;
+            letter-spacing: -0.3px;
+        }
+
+        .tech-card p {
+            color: #52525b; /* Abu-abu gelap */
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .grid-tech {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-about h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                width: 92%;
+                padding: 25px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-about">
+        <div>
+            <h1>Pure Engineering</h1>
+            <p>Dirancang untuk kecepatan dan presisi tanpa kompromi.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2>Inovasi & Teknologi</h2>
+        <p class="section-desc">Setiap frame dirancang dengan presisi aerodinamis dan material karbon tingkat lanjut untuk memberikan efisiensi daya maksimal di setiap kayuhan.</p>
+
+        <div class="grid-tech">
+            <div class="tech-card">
+                <h3>Aerodynamic Cockpit</h3>
+                <p>Integrasi kabel penuh di dalam stang mengurangi hambatan angin secara signifikan pada kecepatan tinggi.</p>
+            </div>
+            <div class="tech-card">
+                <h3>Ultra-Light Carbon Layup</h3>
+                <p>Penggunaan serat karbon modul tinggi memberikan rasio kekakuan terhadap berat (*stiffness-to-weight ratio*) terbaik di kelasnya.</p>
+            </div>
+            <div class="tech-card">
+                <h3>Integrated Geometry</h3>
+                <p>Geometri frame yang diuji dalam terowongan angin (*wind tunnel*) untuk stabilitas luar biasa di tikungan tajam.</p>
+            </div>
+            <div class="tech-card">
+                <h3>Lifetime Warranty</h3>
+                <p>Jaminan kualitas dengan garansi seumur hidup untuk seluruh struktur frame karbon resmi.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
